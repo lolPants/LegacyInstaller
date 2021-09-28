@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using Ookii.Dialogs.Wpf;
 using LegacyInstaller.Utils;
 using LegacyInstaller.Versions;
+using Version = LegacyInstaller.Versions.Version;
 
 namespace LegacyInstaller
 {
@@ -44,8 +45,40 @@ namespace LegacyInstaller
                 Version_DropDown.ItemsSource = VersionManager.Versions;
                 Version_DropDown.SelectedIndex = 0;
             }
+
+            RefreshUI();
         }
 
+        #region Methods
+        private void RefreshUI()
+        {
+            bool valid = ValidateUI();
+            Install_Button.IsEnabled = valid;
+        }
+
+        private bool ValidateUI()
+        {
+            if (!Directories.CheckBeatSaberDirectory(BeatSaber_Input.Text))
+            {
+                return false;
+            }
+
+            if (!Directories.CheckSteamDirectory(Steam_Input.Text))
+            {
+                return false;
+            }
+
+            var selectedVersion = (Version)Version_DropDown.SelectedItem;
+            if (selectedVersion == null)
+            {
+                return false;
+            }
+
+            return true;
+        }
+        #endregion
+
+        #region Events
         private void BeatSaber_Browse_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new VistaFolderBrowserDialog()
@@ -105,5 +138,11 @@ namespace LegacyInstaller
                 }
             }
         }
+
+        private void Version_DropDown_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            RefreshUI();
+        }
+        #endregion
     }
 }
