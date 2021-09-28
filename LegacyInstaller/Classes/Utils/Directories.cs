@@ -10,6 +10,8 @@ namespace LegacyInstaller.Utils
     internal static class Directories
     {
         public static readonly string _beatSaberAppId = "620980";
+        public static readonly string _beatSaberExe = "Beat Saber.exe";
+        public static readonly string _steamExe = "steam.exe";
 
         public static string GetSteamDirectory()
         {
@@ -19,7 +21,18 @@ namespace LegacyInstaller.Utils
                 steamInstall = Registry.LocalMachine.OpenSubKey("SOFTWARE")?.OpenSubKey("WOW6432Node")?.OpenSubKey("Valve")?.OpenSubKey("Steam")?.GetValue("InstallPath").ToString();
             }
 
+            if (CheckSteamDirectory(steamInstall) == false)
+            {
+                return null;
+            }
+
             return steamInstall;
+        }
+
+        public static bool CheckSteamDirectory(string steamInstall)
+        {
+            string exePath = Path.Combine(steamInstall, _steamExe);
+            return File.Exists(exePath);
         }
 
         public static string GetBeatSaberDirectory()
@@ -64,9 +77,10 @@ namespace LegacyInstaller.Utils
                             Match match = regex.Match(line);
                             if (match.Success)
                             {
-                                if (File.Exists(Path.Combine(path, "common", match.Groups[1].Value, "Beat Saber.exe")))
+                                var beatSaberDir = Path.Combine(path, "common", match.Groups[1].Value);
+                                if (CheckBeatSaberDirectory(beatSaberDir))
                                 {
-                                    return Path.Combine(path, "common", match.Groups[1].Value);
+                                    return beatSaberDir;
                                 }
                             }
                         }
@@ -75,6 +89,12 @@ namespace LegacyInstaller.Utils
             }
 
             return null;
+        }
+
+        public static bool CheckBeatSaberDirectory(string beatSaberDir)
+        {
+            string exePath = Path.Combine(beatSaberDir, _beatSaberExe);
+            return File.Exists(exePath);
         }
     }
 }
