@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Ookii.Dialogs.Wpf;
+using LegacyInstaller.Patcher;
 using LegacyInstaller.Utils;
 using LegacyInstaller.Versions;
 using Version = LegacyInstaller.Versions.Version;
@@ -81,60 +81,32 @@ namespace LegacyInstaller
         #region Events
         private void BeatSaber_Browse_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new VistaFolderBrowserDialog()
+            var beatSaberDir = Dialogs.ShowFolderDialog(this, BeatSaber_Input.Text);
+            if (!string.IsNullOrEmpty(beatSaberDir))
             {
-                SelectedPath = BeatSaber_Input.Text,
-            };
-
-            if ((bool)dialog.ShowDialog(this))
-            {
-                var beatSaberDir = dialog.SelectedPath;
                 if (Directories.CheckSteamDirectory(beatSaberDir))
                 {
                     BeatSaber_Input.Text = beatSaberDir;
                 }
                 else
                 {
-                    using (var task = new TaskDialog())
-                    {
-                        task.WindowTitle = "Directory Error";
-                        task.Content = "Invalid Beat Saber Directory";
-
-                        task.MainIcon = TaskDialogIcon.Error;
-                        task.Buttons.Add(new TaskDialogButton(ButtonType.Ok));
-
-                        _ = task.ShowDialog(this);
-                    }
+                    Dialogs.ShowErrorDialog(this, "Directory Error", "Invalid Beat Saber Directory");
                 }
             }
         }
 
         private void Steam_Browse_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new VistaFolderBrowserDialog()
+            var steamInstallDir = Dialogs.ShowFolderDialog(this, Steam_Input.Text);
+            if (!string.IsNullOrEmpty(steamInstallDir))
             {
-                SelectedPath = Steam_Input.Text,
-            };
-
-            if ((bool)dialog.ShowDialog(this))
-            {
-                var steamDir = dialog.SelectedPath;
-                if (Directories.CheckSteamDirectory(steamDir))
+                if (Directories.CheckSteamDirectory(steamInstallDir))
                 {
-                    Steam_Input.Text = steamDir;
+                    Steam_Input.Text = steamInstallDir;
                 }
                 else
                 {
-                    using (var task = new TaskDialog())
-                    {
-                        task.WindowTitle = "Directory Error";
-                        task.Content = "Invalid Steam Directory";
-
-                        task.MainIcon = TaskDialogIcon.Error;
-                        task.Buttons.Add(new TaskDialogButton(ButtonType.Ok));
-
-                        _ = task.ShowDialog(this);
-                    }
+                    Dialogs.ShowErrorDialog(this, "Directory Error", "Invalid Steam Directory");
                 }
             }
         }
@@ -142,6 +114,11 @@ namespace LegacyInstaller
         private void Version_DropDown_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             RefreshUI();
+        }
+
+        private void Install_Button_Click(object sender, RoutedEventArgs e)
+        {
+            SteamPatcher.ApplyPatch();
         }
         #endregion
     }

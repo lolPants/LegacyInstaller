@@ -75,6 +75,7 @@
     <Compile Include="Classes\Patcher\Exceptions.cs" />
     <Compile Include="Classes\Patcher\Native.cs" />
     <Compile Include="Classes\Patcher\SteamPatcher.cs" />
+    <Compile Include="Classes\Utils\Dialogs.cs" />
     <Compile Include="Classes\Utils\Directories.cs" />
     <Compile Include="Classes\Versions\Version.cs" />
     <Compile Include="Classes\Versions\VersionManager.cs" />
