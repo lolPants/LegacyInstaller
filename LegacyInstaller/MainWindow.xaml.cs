@@ -118,7 +118,39 @@ namespace LegacyInstaller
 
         private void Install_Button_Click(object sender, RoutedEventArgs e)
         {
-            SteamPatcher.ApplyPatch();
+            try
+            {
+                SteamPatcher.ApplyPatch();
+            }
+            catch (PatchAlreadyAppliedException)
+            {
+                // No-op
+            }
+            catch (Exception ex)
+            {
+                if (ex is ProcessNotFoundException || ex is ModuleNotFoundException)
+                {
+                    Dialogs.ShowErrorDialog(this, "Patch Error", "Failed to find Steam process to patch.");
+                }
+                else if (ex is StringNotFoundException || ex is PatternNotFoundException)
+                {
+                    Dialogs.ShowErrorDialog(this, "Patch Error", "Failed to find patch target.");
+                }
+                else if (ex is ProcessOpenException)
+                {
+                    var code = ((ProcessOpenException)ex).ErrorCode;
+                    Dialogs.ShowErrorDialog(this, "Patch Error", "Failed to open Steam process for patching.", $"Error Code: {code}");
+                }
+                else if (ex is MemoryReadException || ex is MemoryWriteException)
+                {
+                    var code = ((NativeError)ex).ErrorCode;
+                    Dialogs.ShowErrorDialog(this, "Patch Error", "Failed to read or write memory from Steam process.", $"Error Code: {code}");
+                }
+                else
+                {
+                    throw ex;
+                }
+            }
         }
         #endregion
     }

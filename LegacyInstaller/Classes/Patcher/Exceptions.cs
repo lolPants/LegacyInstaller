@@ -8,9 +8,14 @@ namespace LegacyInstaller.Patcher
     internal class PatternNotFoundException : Exception { }
     internal class PatchAlreadyAppliedException : Exception { }
 
-    internal class ProcessOpenException : Exception
+    internal interface NativeError
     {
-        public readonly int ErrorCode;
+        int ErrorCode { get; }
+    }
+
+    internal class ProcessOpenException : Exception, NativeError
+    {
+        public int ErrorCode { get; private set; }
 
         public ProcessOpenException(int code)
         {
@@ -18,9 +23,9 @@ namespace LegacyInstaller.Patcher
         }
     }
 
-    internal class MemoryReadException : Exception
+    internal class MemoryReadException : Exception, NativeError
     {
-        public readonly int ErrorCode;
+        public int ErrorCode { get; private set; }
 
         public MemoryReadException(int code)
         {
@@ -28,9 +33,9 @@ namespace LegacyInstaller.Patcher
         }
     }
 
-    internal class MemoryWriteException : Exception
+    internal class MemoryWriteException : Exception, NativeError
     {
-        public readonly int ErrorCode;
+        public int ErrorCode { get; private set; }
 
         public MemoryWriteException(int code)
         {
