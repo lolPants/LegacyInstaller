@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LegacyInstaller.Utils;
 
 namespace LegacyInstaller
 {
@@ -23,6 +24,18 @@ namespace LegacyInstaller
         public MainWindow()
         {
             InitializeComponent();
+
+            var beatSaberDir = Directories.GetBeatSaberDirectory();
+            if (beatSaberDir != null)
+            {
+                BeatSaber_Input.Text = beatSaberDir;
+            }
+
+            var steamDir = Directories.GetSteamDirectory();
+            if (steamDir != null)
+            {
+                Steam_Input.Text = steamDir;
+            }
         }
     }
 }

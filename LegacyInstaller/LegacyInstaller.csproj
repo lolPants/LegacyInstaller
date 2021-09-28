@@ -66,6 +66,7 @@
     <Compile Include="Classes\Patcher\Exceptions.cs" />
     <Compile Include="Classes\Patcher\Native.cs" />
     <Compile Include="Classes\Patcher\SteamPatcher.cs" />
+    <Compile Include="Classes\Utils\Directories.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
