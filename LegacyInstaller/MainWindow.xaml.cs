@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using LegacyInstaller.Utils;
-using Microsoft.Win32;
 using Ookii.Dialogs.Wpf;
+using LegacyInstaller.Utils;
+using LegacyInstaller.Versions;
 
 namespace LegacyInstaller
 {
@@ -37,6 +37,12 @@ namespace LegacyInstaller
             if (steamDir != null)
             {
                 Steam_Input.Text = steamDir;
+            }
+
+            if (VersionManager.Versions != null)
+            {
+                Version_DropDown.ItemsSource = VersionManager.Versions;
+                Version_DropDown.SelectedIndex = 0;
             }
         }
 
