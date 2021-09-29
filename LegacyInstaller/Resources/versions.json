@@ -1,247 +1,296 @@
 [
   {
-    "BSVersion": "0.10.1",
-    "ManifestId": "6316038906315325420",
-    "ReleaseURL": "http://steamcommunity.com/ogg/620980/announcements/detail/1662268711472777795"
+    "beatSaberVersion": "0.10.1",
+    "manifestId": "6316038906315325420",
+    "releaseTime": 1525190483,
+    "releaseId": "1662268711472777795"
   },
   {
-    "BSVersion": "0.10.2",
-    "ManifestId": "2542095265882143144",
-    "ReleaseURL": "http://steamcommunity.com/ogg/620980/announcements/detail/3199123443061240805"
+    "beatSaberVersion": "0.10.2",
+    "manifestId": "2542095265882143144",
+    "releaseTime": 1525990219,
+    "releaseId": "3199123443061240805"
   },
   {
-    "BSVersion": "0.10.2p1",
-    "ManifestId": "5611588554149133260",
-    "ReleaseURL": "http://steamcommunity.com/ogg/620980/announcements/detail/1660018815112331498"
+    "beatSaberVersion": "0.10.2p1",
+    "manifestId": "5611588554149133260",
+    "releaseTime": 1526818994,
+    "releaseId": "1660018815112331498"
   },
   {
-    "BSVersion": "0.11.0",
-    "ManifestId": "8700049030626148111",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1675787121569907303"
+    "beatSaberVersion": "0.11.0",
+    "manifestId": "8700049030626148111",
+    "releaseTime": 1532023578,
+    "releaseId": "1675787121569907303"
   },
   {
-    "BSVersion": "0.11.1",
-    "ManifestId": "6574193224879562324",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1675787121577641471"
+    "beatSaberVersion": "0.11.1",
+    "manifestId": "6574193224879562324",
+    "releaseTime": 1532120782,
+    "releaseId": "1675787121577641471"
   },
   {
-    "BSVersion": "0.11.2",
-    "ManifestId": "2707973953401625222",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1700559455389069835"
+    "beatSaberVersion": "0.11.2",
+    "manifestId": "2707973953401625222",
+    "releaseTime": 1534785357,
+    "releaseId": "1700559455389069835"
   },
   {
-    "BSVersion": "0.12.0",
-    "ManifestId": "6094599000655593822",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1708449632708343984"
+    "beatSaberVersion": "0.12.0",
+    "manifestId": "6094599000655593822",
+    "releaseTime": 1543281104,
+    "releaseId": "1708449632708343984"
   },
   {
-    "BSVersion": "0.12.0p1",
-    "ManifestId": "2068421223689664394",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1708450266986928520"
+    "beatSaberVersion": "0.12.0p1",
+    "manifestId": "2068421223689664394",
+    "releaseTime": 1543442213,
+    "releaseId": "1708450266986928520"
   },
   {
-    "BSVersion": "0.12.1",
-    "ManifestId": "2472041066434647526",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3142848113551335636"
+    "beatSaberVersion": "0.12.1",
+    "manifestId": "2472041066434647526",
+    "releaseTime": 1544817431,
+    "releaseId": "3142848113551335636"
   },
   {
-    "BSVersion": "0.12.2",
-    "ManifestId": "5325635033564462932",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1708452169977638962"
+    "beatSaberVersion": "0.12.2",
+    "manifestId": "5325635033564462932",
+    "releaseTime": 1545383075,
+    "releaseId": "1708452169977638962"
   },
   {
-    "BSVersion": "0.13.0",
-    "ManifestId": "3102409495238838111",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1809790777736470809"
+    "beatSaberVersion": "0.13.0",
+    "manifestId": "3102409495238838111",
+    "releaseTime": 1552575465,
+    "releaseId": "1809790777736470809"
   },
   {
-    "BSVersion": "0.13.0p1",
-    "ManifestId": "6827433614670733798",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1809790964563689188"
+    "beatSaberVersion": "0.13.0p1",
+    "manifestId": "6827433614670733798",
+    "releaseTime": 1553016461,
+    "releaseId": "1809790964563689188"
   },
   {
-    "BSVersion": "0.13.1",
-    "ManifestId": "6033025349617217666",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1735482645687974657"
+    "beatSaberVersion": "0.13.1",
+    "manifestId": "6033025349617217666",
+    "releaseTime": 1554150939,
+    "releaseId": "1735482645687974657"
   },
   {
-    "BSVersion": "0.13.2",
-    "ManifestId": "6839388023573913446",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1779393376014546213"
+    "beatSaberVersion": "0.13.2",
+    "manifestId": "6839388023573913446",
+    "releaseTime": 1554381736,
+    "releaseId": "1779393376014546213"
   },
   {
-    "BSVersion": "1.0.0",
-    "ManifestId": "152937782137361764",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2655347409592352590"
+    "beatSaberVersion": "1.0.0",
+    "manifestId": "152937782137361764",
+    "releaseTime": 1558471966,
+    "releaseId": "2655347409592352590"
   },
   {
-    "BSVersion": "1.0.1",
-    "ManifestId": "7950322551526208347",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1617268229025488499"
+    "beatSaberVersion": "1.0.1",
+    "manifestId": "7950322551526208347",
+    "releaseTime": 1558965354,
+    "releaseId": "1617268229025488499"
   },
   {
-    "BSVersion": "1.1.0",
-    "ManifestId": "1400454104881094752",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1606010497768610092"
+    "beatSaberVersion": "1.1.0",
+    "manifestId": "1400454104881094752",
+    "releaseTime": 1560182623,
+    "releaseId": "1606010497768610092"
   },
   {
-    "BSVersion": "1.0.0p1",
-    "ManifestId": "1041583928494277430",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1607139567641962696"
+    "beatSaberVersion": "1.0.0p1",
+    "manifestId": "1041583928494277430",
+    "releaseTime": 1563197232,
+    "releaseId": "1607139567641962696"
   },
   {
-    "BSVersion": "1.2.0",
-    "ManifestId": "3820905673516362176",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3266717385279679846"
+    "beatSaberVersion": "1.2.0",
+    "manifestId": "3820905673516362176",
+    "releaseTime": 1564079206,
+    "releaseId": "3266717385279679846"
   },
   {
-    "BSVersion": "1.3.0",
-    "ManifestId": "2440312204809283162",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1602640407719691235"
+    "beatSaberVersion": "1.3.0",
+    "manifestId": "2440312204809283162",
+    "releaseTime": 1567098742,
+    "releaseId": "1602640407719691235"
   },
   {
-    "BSVersion": "1.4.0",
-    "ManifestId": "3532596684905902618",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1595888090489865366"
+    "beatSaberVersion": "1.4.0",
+    "manifestId": "3532596684905902618",
+    "releaseTime": 1570205464,
+    "releaseId": "1595888090489865366"
   },
   {
-    "BSVersion": "1.4.2",
-    "ManifestId": "1199049250928380207",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3172148783714663931"
+    "beatSaberVersion": "1.4.2",
+    "manifestId": "1199049250928380207",
+    "releaseTime": 1570786618,
+    "releaseId": "3172148783714663931"
   },
   {
-    "BSVersion": "1.5.0",
-    "ManifestId": "2831333980042022356",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1604898551795379829"
+    "beatSaberVersion": "1.5.0",
+    "manifestId": "2831333980042022356",
+    "releaseTime": 1573142339,
+    "releaseId": "1604898551795379829"
   },
   {
-    "BSVersion": "1.6.0",
-    "ManifestId": "1869974316274529288",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3462636667924814182"
+    "beatSaberVersion": "1.6.0",
+    "manifestId": "1869974316274529288",
+    "releaseTime": 1576225270,
+    "releaseId": "3462636667924814182"
   },
   {
-    "BSVersion": "1.6.1",
-    "ManifestId": "6122319670026856947",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1702855647517326143"
+    "beatSaberVersion": "1.6.1",
+    "manifestId": "6122319670026856947",
+    "releaseTime": 1578419258,
+    "releaseId": "1702855647517326143"
   },
   {
-    "BSVersion": "1.6.2",
-    "ManifestId": "4932559146183937357",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1702857555888635029"
+    "beatSaberVersion": "1.6.2",
+    "manifestId": "4932559146183937357",
+    "releaseTime": 1578601161,
+    "releaseId": "1702857555888635029"
   },
   {
-    "BSVersion": "1.7.0",
-    "ManifestId": "3516084911940449222",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/1708488968117071534"
+    "beatSaberVersion": "1.7.0",
+    "manifestId": "3516084911940449222",
+    "releaseTime": 1580301633,
+    "releaseId": "1708488968117071534"
   },
   {
-    "BSVersion": "1.8.0",
-    "ManifestId": "3177969677109016846",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2080040995048021450"
+    "beatSaberVersion": "1.8.0",
+    "manifestId": "3177969677109016846",
+    "releaseTime": 1585225654,
+    "releaseId": "2080040995048021450"
   },
   {
-    "BSVersion": "1.9.0",
-    "ManifestId": "7885463693258878294",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2194884053816491058"
+    "beatSaberVersion": "1.9.0",
+    "manifestId": "7885463693258878294",
+    "releaseTime": 1586436085,
+    "releaseId": "2194884053816491058"
   },
   {
-    "BSVersion": "1.9.1",
-    "ManifestId": "6222769774084748916",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2196011856188103369"
+    "beatSaberVersion": "1.9.1",
+    "manifestId": "6222769774084748916",
+    "releaseTime": 1588671151,
+    "releaseId": "2196011856188103369"
   },
   {
-    "BSVersion": "1.10.0",
-    "ManifestId": "6711131863503994755",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2179125258536373088"
+    "beatSaberVersion": "1.10.0",
+    "manifestId": "6711131863503994755",
+    "releaseTime": 1590409931,
+    "releaseId": "2179125258536373088"
   },
   {
-    "BSVersion": "1.11.0",
-    "ManifestId": "1919603726987963829",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3961432516746159538"
+    "beatSaberVersion": "1.11.0",
+    "manifestId": "1919603726987963829",
+    "releaseTime": 1597665787,
+    "releaseId": "3961432516746159538"
   },
   {
-    "BSVersion": "1.11.1",
-    "ManifestId": "3268824881806146387",
-    "ReleaseURL": "NULL"
+    "beatSaberVersion": "1.11.1",
+    "manifestId": "3268824881806146387",
+    "releaseTime": 1597940912,
+    "releaseId": "NULL"
   },
   {
-    "BSVersion": "1.12.1",
-    "ManifestId": "2928416283534881313",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2889580787311737971"
+    "beatSaberVersion": "1.12.1",
+    "manifestId": "2928416283534881313",
+    "releaseTime": 1602608464,
+    "releaseId": "2889580787311737971"
   },
   {
-    "BSVersion": "1.12.2",
-    "ManifestId": "543439039654962432",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/5096345334644252275"
+    "beatSaberVersion": "1.12.2",
+    "manifestId": "543439039654962432",
+    "releaseTime": 1603126257,
+    "releaseId": "5096345334644252275"
   },
   {
-    "BSVersion": "1.13.0",
-    "ManifestId": "4635119747389290346",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2903094755791760339"
+    "beatSaberVersion": "1.13.0",
+    "manifestId": "4635119747389290346",
+    "releaseTime": 1605189638,
+    "releaseId": "2903094755791760339"
   },
   {
-    "BSVersion": "1.13.2",
-    "ManifestId": "8571679771389514488",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3025824186763919109"
+    "beatSaberVersion": "1.13.2",
+    "manifestId": "8571679771389514488",
+    "releaseTime": 1611238525,
+    "releaseId": "3025824186763919109"
   },
   {
-    "BSVersion": "1.13.4",
-    "ManifestId": "1257277263145069282",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3020198491530803202"
+    "beatSaberVersion": "1.13.4",
+    "manifestId": "1257277263145069282",
+    "releaseTime": 1615298084,
+    "releaseId": "3020198491530803202"
   },
   {
-    "BSVersion": "1.13.5",
-    "ManifestId": "7007516983116400336",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3021325027071201045"
+    "beatSaberVersion": "1.13.5",
+    "manifestId": "7007516983116400336",
+    "releaseTime": 1615558980,
+    "releaseId": "3021325027071201045"
   },
   {
-    "BSVersion": "1.14.0",
-    "ManifestId": "9218225910501819399",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3012318462417082617"
+    "beatSaberVersion": "1.14.0",
+    "manifestId": "9218225910501819399",
+    "releaseTime": 1616075076,
+    "releaseId": "3012318462417082617"
   },
   {
-    "BSVersion": "1.15.0",
-    "ManifestId": "7624554893344753887",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3041595663499101523"
+    "beatSaberVersion": "1.15.0",
+    "manifestId": "7624554893344753887",
+    "releaseTime": 1619708256,
+    "releaseId": "3041595663499101523"
   },
   {
-    "BSVersion": "1.16.0",
-    "ManifestId": "3667184295685865706",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3001065803744427928"
+    "beatSaberVersion": "1.16.0",
+    "manifestId": "3667184295685865706",
+    "releaseTime": 1622127150,
+    "releaseId": "3001065803744427928"
   },
   {
-    "BSVersion": "1.16.1",
-    "ManifestId": "9201874499606445062",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/3001065803748822093"
+    "beatSaberVersion": "1.16.1",
+    "manifestId": "9201874499606445062",
+    "releaseTime": 1622217128,
+    "releaseId": "3001065803748822093"
   },
   {
-    "BSVersion": "1.16.2",
-    "ManifestId": "3692829915208062825",
-    "ReleaseURL": "http://steamcommunity.com/games/620980/announcements/detail/3024710972645830369"
+    "beatSaberVersion": "1.16.2",
+    "manifestId": "3692829915208062825",
+    "releaseTime": 1622819273,
+    "releaseId": "3024710972645830369"
   },
   {
-    "BSVersion": "1.16.3",
-    "ManifestId": "6392596175313869009",
-    "ReleaseURL": "http://steamcommunity.com/games/620980/announcements/detail/5293402556388135977"
+    "beatSaberVersion": "1.16.3",
+    "manifestId": "6392596175313869009",
+    "releaseTime": 1626800723,
+    "releaseId": "5293402556388135977"
   },
   {
-    "BSVersion": "1.16.4",
-    "ManifestId": "8820433629543698585",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2965042081090310028"
+    "beatSaberVersion": "1.16.4",
+    "manifestId": "8820433629543698585",
+    "releaseTime": 1626974267,
+    "releaseId": "2965042081090310028"
   },
   {
-    "BSVersion": "1.17.0",
-    "ManifestId": "7826684224434229804",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2945905042782366475"
+    "beatSaberVersion": "1.17.0",
+    "manifestId": "7826684224434229804",
+    "releaseTime": 1630421019,
+    "releaseId": "2945905042782366475"
   },
   {
-    "BSVersion": "1.17.1",
-    "ManifestId": "4668547658954826996",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/2947032120578243378"
+    "beatSaberVersion": "1.17.1",
+    "manifestId": "4668547658954826996",
+    "releaseTime": 1631199302,
+    "releaseId": "2947032120578243378"
   },
   {
-    "BSVersion": "1.18.0",
-    "ManifestId": "5599254819160454367",
-    "ReleaseURL": "https://steamcommunity.com/games/620980/announcements/detail/5570379635768010184"
+    "beatSaberVersion": "1.18.0",
+    "manifestId": "5599254819160454367",
+    "releaseTime": 1632235309,
+    "releaseId": "5570379635768010184"
   }
 ]

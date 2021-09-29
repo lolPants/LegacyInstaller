@@ -1,15 +1,26 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace LegacyInstaller.Versions
 {
     internal class Version
     {
-        [JsonProperty("BSVersion")]
+        [JsonProperty("beatSaberVersion")]
         public string BeatSaberVersion { get; private set; }
-        [JsonProperty("ManifestId")]
+
+        [JsonProperty("manifestId")]
         public string ManifestId { get; private set; }
-        [JsonProperty("ReleaseURL")]
-        public string ReleaseURL { get; private set; }
+
+        [JsonProperty("releaseTime")]
+        [JsonConverter(typeof(UnixDateTimeConverter))]
+        public DateTime ReleaseTime { get; private set; }
+
+        [JsonProperty("releaseId")]
+        public string ReleaseId { get; private set; }
+
+        [JsonIgnore]
+        public string ReleaseUrl => $"https://steamcommunity.com/games/620980/announcements/detail/{ReleaseId}";
 
         public override string ToString()
         {
