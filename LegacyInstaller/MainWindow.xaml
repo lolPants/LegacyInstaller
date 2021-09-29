@@ -39,13 +39,15 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Column="0" VerticalAlignment="Center" Margin="0,0,5,0">Version</TextBlock>
             <ComboBox Name="Version_DropDown" Grid.Column="1" Width="80" SelectionChanged="Version_DropDown_SelectionChanged" />
-            <Button Name="Install_Button" Grid.Column="3" Padding="12,3,12,3" IsEnabled="False" Click="Install_Button_Click">Install</Button>
+            <TextBlock Name="Version_Date" Grid.Column="2" Padding="5,0,0,0" VerticalAlignment="Center" />
+            <Button Name="Install_Button" Grid.Column="4" Padding="12,3,12,3" IsEnabled="False" Click="Install_Button_Click">Install</Button>
         </Grid>
     </Grid>
 </Window>

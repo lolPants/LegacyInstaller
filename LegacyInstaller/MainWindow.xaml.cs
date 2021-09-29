@@ -54,6 +54,12 @@ namespace LegacyInstaller
         {
             bool valid = ValidateUI();
             Install_Button.IsEnabled = valid;
+
+            var selected = (Version)Version_DropDown.SelectedItem;
+            if (selected != null)
+            {
+                Version_Date.Text = selected.ReleaseTime.ToShortDateString();
+            }
         }
 
         private bool ValidateUI()
