@@ -22,11 +22,16 @@ jobs:
       run: |
         find "LegacyInstaller/bin/Release" -type f ! \( -name "*.exe" -o -name "*.dll" \) -delete
         cp "LICENSE" "LegacyInstaller/bin/Release/LICENSE.LegacyInstaller.txt" || :
+    - name: Resolve Short Commit Hash
+      if: startsWith(github.ref, 'refs/tags/') == false
+      id: get_hash
+      shell: bash
+      run: echo ::set-output name=hash::`git rev-parse --short HEAD`
     - name: Upload Build
       if: startsWith(github.ref, 'refs/tags/') == false
       uses: actions/upload-artifact@v2
       with:
-        name: LegacyInstaller-${{ github.sha }}
+        name: LegacyInstaller-${{ steps.get_hash.outputs.hash }}
         path: ./LegacyInstaller/bin/Release/
     - name: Extract Release Version
       if: startsWith(github.ref, 'refs/tags/')
