@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace LegacyInstaller.Versions
 {
@@ -15,5 +10,10 @@ namespace LegacyInstaller.Versions
         public string ManifestId { get; private set; }
         [JsonProperty("ReleaseURL")]
         public string ReleaseURL { get; private set; }
+
+        public override string ToString()
+        {
+            return BeatSaberVersion;
+        }
     }
 }
