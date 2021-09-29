@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace LegacyInstaller.Utils
 {
@@ -40,6 +41,28 @@ namespace LegacyInstaller.Utils
             }
 
             return rel;
+        }
+
+        public static async Task CopyDirectoryAsync(string source, string destination)
+        {
+            Directory.CreateDirectory(destination);
+
+            foreach (var file in Directory.GetFiles(source))
+            {
+                var destinationFile = Path.Combine(destination, Path.GetFileName(file));
+
+                using (var fileSource = File.OpenRead(file))
+                using (var fileTarget = File.Create(destinationFile))
+                {
+                    await fileSource.CopyToAsync(fileTarget);
+                }
+            }
+
+            foreach (var directory in Directory.GetDirectories(source))
+            {
+                var target = Path.Combine(destination, Path.GetFileName(directory));
+                await CopyDirectoryAsync(directory, target);
+            }
         }
     }
 }
